@@ -9,12 +9,15 @@ layout: 'base.njk'
 <section class="hero">
   <div class="container flow">
       <div class="hero__content flow">
-        <h1 class="section-title">Welcome to my blog!</h1>
-        <p>I use this space to document my adventures in front-end development, sharing how I’ve overcome issues I’ve run into, useful resources, and more.</p>
-        <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p>
+        <h1 class="section-title">Velkommen til bloggen min!</h1>
+        <p>
+          Jeg bruker denne plassen til å dokumentere eventyrene i min hverdag.
+        </p>
+        <p>Nedenfor er noen av mine favorittartikler, eller du kan gå til bloggsiden for å se mine siste innlegg. 
+        </p>
         <div class="flex-group">
-          <a href="#featured-articles" class="btn btn--primary">Featured articles</a>
-          <a href="./blog" class="btn btn--neutral">Most recent articles</a>
+          <a href="#featured-articles" class="btn btn--primary">Utvalgte artikler</a>
+          <a href="./blog" class="btn btn--neutral">De nyeste artiklene</a>
         </div>
       </div>
       <div>
@@ -25,8 +28,8 @@ layout: 'base.njk'
 
 <section id="featured-articles" class="featured-articles">
   <div class="container flow">
-    <h2 class="section-title text-center ">Featured articles</h2>
-    <p class="text-center">Here is a sample of articles which I feel give you a good idea of what this site is all about.</p>
+    <h2 class="section-title text-center ">Utvalgte artikler</h2>
+    <p class="text-center">Her er et utvalg av artikler som jeg føler gir deg en god idé om hva denne siden handler om.</p>
     <ul role="list" class="articles__list flow">
 
       {%- for post in collections.featured | reverse -%}
